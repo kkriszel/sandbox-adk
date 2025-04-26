@@ -32,6 +32,7 @@ scriptwriter_agent = LlmAgent(
     name="ShortsScriptwriter",
     model="gemini-2.0-flash-001",
     instruction=load_instruction_from_file("scriptwriter_instruction.txt"),
+    # tools=[google_search], # not working like this
     tools=[agent_tool.AgentTool(agent=search_agent)],
     output_key="generated_script",  # Save result to state
 )

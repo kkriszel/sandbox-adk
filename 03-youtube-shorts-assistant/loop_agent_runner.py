@@ -63,7 +63,7 @@ root_agent = youtube_shorts_agent
 from google.genai import types
 from google.adk.sessions import InMemorySessionService
 from google.adk.runners import Runner
-from util import load_instruction_from_file
+from .util import load_instruction_from_file
 
 # Load .env
 # Replace the API_KEY in .env file.
